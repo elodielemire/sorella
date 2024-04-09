@@ -1,0 +1,44 @@
+nav {
+	width: 300px;
+	height: 100vh;
+	text-align: center;
+	position: fixed;
+	background-image: url('../../assets/background.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+nav .navbar {
+	background-color: rgba(255,216,162, 0.4);
+	height: 100%;
+}
+
+nav .list {
+	padding: 0;
+	margin-top: 100px;
+	margin-bottom: 30px;
+	display: flex;
+	flex-direction: column;
+}
+
+nav .item {
+	text-align: left;
+	padding: 20px 0 20px 30px;
+	display: flex;
+	align-items: center;
+}
+
+nav .item:hover {
+	background-color: #FFFBF7;
+}
+
+nav .item img {
+	margin-right: 20px;
+	width: 30px;
+}
+
+nav .sorella-logo {
+	width: 70%;
+	margin-top: 30px;
+}

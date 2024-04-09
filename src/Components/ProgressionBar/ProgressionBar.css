@@ -1,0 +1,15 @@
+.progression-bar {
+    height: 16px;
+    background: var(--secondary-color-light);
+    border-radius: 8px;
+    position: relative;
+    margin: 10px;
+}
+
+.progression-bar__bar {
+    height: 16px;
+    border-radius: 8px;
+    position: absolute;
+    background: var(--secondary-color);
+    left: 0;
+}

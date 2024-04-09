@@ -1,0 +1,46 @@
+.todo-category__title {
+	border-bottom: 1px solid var(--secondary-color);
+	margin: 30px 0;
+	font-weight: bold;
+	position: relative;
+	display: flex;
+}
+
+.todo-category__title:after{
+    content: "\25bc";
+    position: absolute;
+    right: 0;
+}
+
+.todo-category__title.arrow-up:after {
+	content: "\25b2";
+}
+
+.todo-category__title:hover{
+    color: var(--secondary-color);
+}
+
+.todo-category__subtitle {
+	margin-bottom: 30px;
+}
+
+.todo-category__when {
+	display: flex;
+	align-items: center;
+	margin-left: 20px;
+}
+
+.todo-category__when img {
+	width: 16px;
+	margin-right: 5px;
+}
+
+.todo-category__when p {
+	color: var(--secondary-color);
+	font-size: 12px;
+	font-style: italic;
+}
+
+.list-container .hidden  {
+	display: none;
+}

@@ -1,0 +1,12 @@
+.home-cards-container {
+	margin-top: 30px;
+	display: flex;
+}
+
+.home-cards-container > div {
+	margin-right: 30px;
+}
+
+.home-cards-container h3 {
+	text-align: center;
+}
