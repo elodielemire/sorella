@@ -12,7 +12,7 @@ export default function Navbar(props) {
     return (
         <nav>
             <div className="navbar">
-                <img className="sorella-logo" src={sorellaLogo}/>
+                <Link to="https://www.sorella-care.com/"><img className="sorella-logo" src={sorellaLogo}/></Link>
                 <ul className="list">
                     <Link to='/'><li className="item"><img src={homeLogo}/>Accueil</li></Link>
                     <Link to='/suivre-ma-grossesse'><li className="item"><img src={pathwayLogo}/>Suivre ma grossesse</li></Link>

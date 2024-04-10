@@ -26,11 +26,9 @@ export default function CarePathway (props) {
 					<span>41 SA</span>
 				</div>
 
-				<p className="date-pregnancy">{props.pregnancyDatas.durationInDays} jours ({props.pregnancyDatas.durationInWeeksAndDays})</p>
+				<p className="date-pregnancy">{props.pregnancyDatas.durationInDays} jours de grossesse ({props.pregnancyDatas.durationInWeeksAndDays})</p>
 	            <p className="date-pregnancy">DPA {props.pregnancyDatas.dpaDate}</p>
-	            <div onClick={() => setOpen(true)}>
-	            	<Button text="Recalculer ma DPA"/>
-	            </div>
+            	<Button onClick={() => setOpen(true)} text="Recalculer ma DPA"/>
             </div>
 
 			<div className="steps-container">

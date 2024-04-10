@@ -7,12 +7,8 @@ import Todo from "./Containers/Todo/Todo";
 import Navbar from "./Components/Navbar/Navbar";
 import Popup from "./Components/Popup/Popup"
 
-const userDatas = {
-  "name": "Elodie",
-  "ovulationDate": "2024/01/25"
-}
-
 const pregnancyDuration = 280
+const appContext = createContext();
 
 Date.prototype.addDays = function(days) {
     var date = new Date(this.valueOf());
@@ -20,21 +16,24 @@ Date.prototype.addDays = function(days) {
     return date;
 }
 
-const appContext = createContext();
-
 function App() {
   const [open, setOpen] = useState(true);
-  const [ovulationDate, setOvulationDate] = useState(userDatas.ovulationDate);
-  const updateOvulationDate = (data) =>{
-    setOvulationDate(data)
+  const [userDatas, setUserDatas] = useState({});
+
+  const updateOvulationDate = (data) => {
+    setUserDatas((prevState) => ({...prevState, 'ovulationDate': data}))
   }
 
-  const ovulationDateFormat = new Date(ovulationDate)
+  const updateUserName = (data) => {
+    setUserDatas((prevState) => ({...prevState, 'name': data}))
+  }
+
+  const ovulationDateFormat = new Date(userDatas.ovulationDate)
   const dpaDate = ovulationDateFormat.addDays(pregnancyDuration).toLocaleDateString("fr")
   const today = new Date()
   const durationInTime = today.getTime() - ovulationDateFormat.getTime()
   const durationInDays = Math.round(durationInTime / (1000 * 3600 * 24))
-  const durationInWeeks = Math.round(durationInDays / 7)
+  const durationInWeeks = Math.floor(durationInDays / 7) + 2
   const durationInWeeksAndDays = durationInWeeks + "SA + " + (durationInDays % 7) + "J"
   const percentage = Math.round(100 * durationInDays / pregnancyDuration)
 
@@ -47,7 +46,7 @@ function App() {
   }
 
   return (
-     <appContext.Provider value={{ovulationDate,updateOvulationDate}}>
+     <appContext.Provider value={{userDatas,updateUserName,updateOvulationDate}}>
      {open ? <Popup text="Bienvenue !" closePopup={() => setOpen(false)} login={true} /> : null}
       <div className="App">
         <Navbar userDatas={userDatas}/>

@@ -1,6 +1,7 @@
 .todo-category__title {
 	border-bottom: 1px solid var(--secondary-color);
 	margin: 30px 0;
+	padding-bottom: 5px;
 	font-weight: bold;
 	position: relative;
 	display: flex;

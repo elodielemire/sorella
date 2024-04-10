@@ -8,33 +8,37 @@ export default function Popup (props) {
   const [name, setName] = useState("")
   const context = useContext(appContext)
 
-  const onClickOkButton = () => {
+  const onClickOvulationButton = () => {
     context.updateOvulationDate(ovulationDate)
     props.closePopup()
   }
 
+  const onClickLoginButton = () => {
+    context.updateOvulationDate(ovulationDate)
+    context.updateUserName(name)
+    props.closePopup()
+  }
+
   return (
-    <div className="popup-container">
+    <div className={props.login ? "popup-container with-picture" : "popup-container"}>
+    <div className="popup-background">
      <div className="popup">
-      <p>{props.text}</p>
+      <h2>{props.text}</h2>
         {props.login ? 
-          <div>
+          <div className="popup__content">
+            <label>Entrer votre prénom</label>
             <input type="text" onChange={(event) => setName(event.target.value)} />
-            <div onClick={props.closePopup}>
-                <Button text="Fermer" />
-            </div>
-         </div> : <div>
+            <label>Entrer votre date d'ovulation</label>
+            <input type="date" onChange={(event) => setOvulationDate(event.target.value)} />
+            <Button text="Entrer" onClick={onClickLoginButton}/>
+          </div> : 
+          <div className="popup__content">
           <input type="date" onChange={(event) => setOvulationDate(event.target.value)} />
-          <div className="popup__buttons">
-            <div onClick={props.closePopup}>
-              <Button text="Annuler" />
-            </div>
-            <div onClick={onClickOkButton}>
-              <Button text="OK" />
-            </div>
-          </div>
+              <Button text="OK" onClick={onClickOvulationButton}/>
+              <Button onClick={props.closePopup} text="Annuler" />
          </div>
        }
+     </div>
      </div>
     </div>
   );

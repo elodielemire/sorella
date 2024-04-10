@@ -12,7 +12,7 @@
 }
 
 .button:hover {
-	background-color: #A45621;
+	background-color: var(--primary-color-dark);
 }
 
 .button img {

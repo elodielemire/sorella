@@ -10,7 +10,7 @@ nav {
 }
 
 nav .navbar {
-	background-color: rgba(255,216,162, 0.4);
+	background-color: rgba(253, 235, 210, 0.4);
 	height: 100%;
 }
 
@@ -30,7 +30,7 @@ nav .item {
 }
 
 nav .item:hover {
-	background-color: #FFFBF7;
+	background-color: white;
 }
 
 nav .item img {
