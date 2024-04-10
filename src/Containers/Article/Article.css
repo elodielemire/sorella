@@ -1,0 +1,51 @@
+.article > div {
+	max-width: 800px;
+	margin: 0 auto 60px;
+}
+
+.article .article__banner {
+	height: 200px;
+	width: 500px;
+	margin: 30px auto;
+	border-radius: 30px;
+	background-size: cover;
+	background-position: center;
+}
+
+.article h2,
+.article h2 + p {
+	text-align: center;
+}
+
+.article__author__picture img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	margin-right: 20px;
+}
+
+.article__author {
+	display: flex;
+	align-items: center;
+	font-size: var(--small-font-size);
+	justify-content: center;
+    margin-top: 30px;
+}
+
+.article__author__name {
+	font-weight: bold;
+}
+
+.article__content div{
+	margin-bottom: 20px;
+}
+
+.article__back-button {
+	color: var(--primary-color);
+	text-decoration: none;
+	font-size: var(--small-font-size);
+}
+
+.article__back-button:hover {
+	text-decoration: underline;
+}

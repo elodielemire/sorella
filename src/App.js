@@ -5,6 +5,7 @@ import Home from "./Containers/Home/Home";
 import CarePathway from "./Containers/CarePathway/CarePathway";
 import Todo from "./Containers/Todo/Todo";
 import ToRead from "./Containers/ToRead/ToRead";
+import Article from "./Containers/Article/Article";
 import Navbar from "./Components/Navbar/Navbar";
 import Popup from "./Components/Popup/Popup"
 
@@ -56,6 +57,7 @@ function App() {
             <Route path='/suivre-ma-grossesse' element={<CarePathway pregnancyDatas={pregnancyDatas}/>}/>
             <Route path='/a-faire/' element={<Todo/>}/>
             <Route path='/lectures/' element={<ToRead/>}/>
+            <Route path='/lectures/:slug' element={<Article/>}/>
         </Routes>
       </div>
       </appContext.Provider>
