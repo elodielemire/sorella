@@ -8,7 +8,7 @@
 
 .appointment-card .button {
 	margin: 0;
-	font-size: 12px;
+	font-size: var(--small-font-size);
 }
 
 .profile-picture {
@@ -41,7 +41,7 @@
 	padding: 20px 0;
 	display: flex;
 	justify-content: space-evenly;
-	font-size: 12px;
+	font-size: var(--small-font-size);
 }
 
 .appointment-card__schedule > div {

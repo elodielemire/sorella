@@ -18,7 +18,7 @@
 
 .care-pathway-page .button {
 	margin-top: 20px;
-	font-size: 12px;
+	font-size: var(--small-font-size);
 }
 
 .step-bar {
@@ -55,7 +55,11 @@
 
 .step-date {
 	position: absolute;
-	left: -80px;
+	left: -93px;
+    top: -10px;
+    padding: 10px;
+    background-color: #FFF2E3;
+    border-radius: 10px;
 }
 
 .step-todos {
@@ -69,5 +73,5 @@
 	text-align: center;
 	color: white;
 	padding: 10px 20px;
-	font-size: 12px;
+	font-size: var(--small-font-size);
 }

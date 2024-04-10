@@ -4,6 +4,7 @@ import {Routes, Route} from 'react-router-dom';
 import Home from "./Containers/Home/Home";
 import CarePathway from "./Containers/CarePathway/CarePathway";
 import Todo from "./Containers/Todo/Todo";
+import ToRead from "./Containers/ToRead/ToRead";
 import Navbar from "./Components/Navbar/Navbar";
 import Popup from "./Components/Popup/Popup"
 
@@ -18,7 +19,7 @@ Date.prototype.addDays = function(days) {
 
 function App() {
   const [open, setOpen] = useState(true);
-  const [userDatas, setUserDatas] = useState({});
+  const [userDatas, setUserDatas] = useState({'ovulationDate': new Date(), 'name': ''});
 
   const updateOvulationDate = (data) => {
     setUserDatas((prevState) => ({...prevState, 'ovulationDate': data}))
@@ -54,6 +55,7 @@ function App() {
             <Route path='/' element={<Home userDatas={userDatas} pregnancyDatas={pregnancyDatas}/>}/>
             <Route path='/suivre-ma-grossesse' element={<CarePathway pregnancyDatas={pregnancyDatas}/>}/>
             <Route path='/a-faire/' element={<Todo/>}/>
+            <Route path='/lectures/' element={<ToRead/>}/>
         </Routes>
       </div>
       </appContext.Provider>

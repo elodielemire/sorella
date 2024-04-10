@@ -40,7 +40,9 @@ h3 {
 body {
   --primary-color: #d6693b;
   --primary-color-light: #FFF2E3;
-  --primary-color-dark: #be5427;
+  --primary-color-hover: #be5427;
   --secondary-color: #839980;
   --secondary-color-light: #EDF1EB;
+  --secondary-color-hover: #cedac8;
+  --small-font-size: 14px;
 }

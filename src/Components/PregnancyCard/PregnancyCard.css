@@ -11,7 +11,7 @@
 }
 
 .pregnancy-card .button {
-	font-size: 12px;
+	font-size: var(--small-font-size);
 	margin-top: 40px;
 }
 

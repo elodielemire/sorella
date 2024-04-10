@@ -1,7 +1,7 @@
 import './Todo.css'
 import adminPicture from '../../assets/administrative.svg'
 import furniturePicture from '../../assets/health.svg'
-import TodoCategory from '../../Components/TodoCategory/TodoCategory'
+import TodoCard from '../../Components/TodoCard/TodoCard'
 import adminList from '../../assets/datas/admin-list.json'
 import furnitureList from '../../assets/datas/furniture-list.json'
 
@@ -16,7 +16,7 @@ export default function Todo () {
 			</div>
 			<ul className="list-container">
 				{adminList.map((category, i) =>
-					<TodoCategory key={i} category={category}/>
+					<TodoCard key={i} category={category}/>
 				)}
 			</ul>
 			
@@ -26,7 +26,7 @@ export default function Todo () {
 			</div>
 			<ul className="list-container">
 				{furnitureList.map((category, i) => 
-					<TodoCategory key={i} category={category}/>
+					<TodoCard key={i} category={category}/>
 				)}
 			</ul>
 		</div>
