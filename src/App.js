@@ -19,7 +19,7 @@ Date.prototype.addDays = function(days) {
 }
 
 function App() {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
   const [userDatas, setUserDatas] = useState({'ovulationDate': new Date(), 'name': ''});
 
   const updateOvulationDate = (data) => {
