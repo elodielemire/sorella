@@ -5,7 +5,15 @@ import './TodoCard.css'
 
 export default function TodoCard (props) {
 	const [isActive, setActive] = useState(false);
-
+	const [data, setData] = useState(props.category.items);
+	const toggleCheckbox = (index) => {
+		const newData = [...data];
+		newData[index] = {
+			...newData[index],
+			checked: !newData[index].checked
+		};
+		setData(newData);
+	}
   	const togglePanel = () => {
   	  	setActive(!isActive); 
    	};
@@ -24,7 +32,7 @@ export default function TodoCard (props) {
 				<ul>
 					{props.category.items.map((item, i) =>
 						<li key={i}>
-							<CheckboxItem checked={item.check} text={item.title}/>
+							<CheckboxItem toggle={toggleCheckbox} index={i} checked={data[i].checked} text={item.title}/>
 						</li>
 						)}
 				</ul>

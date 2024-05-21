@@ -5,16 +5,13 @@
 		"subtitle": "Ma déclaration de grossesse établie par mon praticien est à transmettre :",
 		"items": [
 				{
-					"title": "A ma caisse d'assurance maladie (volet rose)",
-					"check": false
+					"title": "A ma caisse d'assurance maladie (volet rose)"
 				},
 				{
-					"title": "A ma CAF (2 volets bleus)",
-					"check": false
+					"title": "A ma CAF (2 volets bleus)"
 				},
 				{
-					"title": "A mon employeur (une copie)",
-					"check": false
+					"title": "A mon employeur (une copie)"
 				}
 			]
 			
@@ -25,16 +22,13 @@
 		"subtitle": "Vous devez faire des choix concernant votre suivi et votre lieu d'accouchement :",
 		"items": [
 			{
-				"title": "J'ai choisi le praticien qui va suivre ma grossesse",
-				"check": false
+				"title": "J'ai choisi le praticien qui va suivre ma grossesse"
 			},
 			{
-				"title": "J'ai choisi dans quelle structure je souhaite accoucher",
-				"check": false
+				"title": "J'ai choisi dans quelle structure je souhaite accoucher"
 			},
 			{
-				"title": "Je me suis inscrite dans le lieu choisi pour mon accouchement",
-				"check": false
+				"title": "Je me suis inscrite dans le lieu choisi pour mon accouchement"
 			}
 		]
 		
@@ -45,20 +39,16 @@
 		"subtitle": "Vous devez déclarer la naissance de votre bébé à différents organismes. N'oubliez pas votre certificat d'accouchement et l'extrait d'acte de naissance de votre bébé :",
 		"items": [
 			{
-				"title": "A l'officier d'état civil dans les 5 jours qui suivent la naissance",
-				"check": false
+				"title": "A l'officier d'état civil dans les 5 jours qui suivent la naissance"
 			},
 			{
-				"title": "A ma CAF",
-				"check": false
+				"title": "A ma CAF"
 			},
 			{
-				"title": "A ma caisse d'assurance maladie",
-				"check": false
+				"title": "A ma caisse d'assurance maladie"
 			},
 			{
-				"title": "A ma mutuelle",
-				"check": false
+				"title": "A ma mutuelle"
 			}
 		]
 		
