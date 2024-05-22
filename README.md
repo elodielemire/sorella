@@ -21,10 +21,11 @@ In another terminal, you can run :
 
 ## List of improvements
 
-- Make the todo list datas persistent
-- Prevent the login popup to appear when reloading the page
-- Create the article page
-- Prevent the user from selecting an ovulation date too far in the past
-- Allow the user to change its name
-- Implement unit tests and end to end tests
-- ... and a lot of other new cool features !
+- [X] Make the todo list datas persistent
+- [ ] Prevent the login popup to appear when reloading the page
+- [ ] Add a disconnect button
+- [X] Create the article page
+- [ ] Prevent the user from selecting an ovulation date too far in the past
+- [ ] Allow the user to change its name
+- [ ] Implement unit tests and end to end tests
+- [ ] and a lot of other new cool features !
