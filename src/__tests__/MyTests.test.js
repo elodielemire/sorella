@@ -4,23 +4,23 @@ import CarePathway from '../Containers/CarePathway/CarePathway';
 import Popup from '../Components/Popup/Popup';
 
 test("CarePathway renders successfully", () => {
-    render(<CarePathway/>);
+  render(<CarePathway/>);
 
-    const welcome = screen.getByText(/Suivre ma grossesse/i);
+  const welcome = screen.getByText(/Suivre ma grossesse/i);
 
-    expect(welcome).toBeInTheDocument();
+  expect(welcome).toBeInTheDocument();
 })
 
-test("CarePathway calculate pregnancy days successfully", async() => {
-    const {queryByTestId}  = render(<Popup/>);
+test("CarePathway calculate pregnancy days successfully", async () => {
+  const {queryByTestId} = render(<Popup/>);
 
-    const inputElem = queryByTestId('ovulation-date');
-    await userEvent.type(inputElem, '25/01/2024');
-    await userEvent.click(screen.getByText(/OK/i))
+  const inputElem = queryByTestId('ovulation-date');
+  await userEvent.type(inputElem, '25/01/2024');
+  await userEvent.click(screen.getByText(/OK/i))
 
-    render(<CarePathway/>);
+  render(<CarePathway/>);
 
-    const pregnancyDays = screen.getByText(/119 jours/i);
+  const pregnancyDays = screen.getByText(/119 jours/i);
 
-    expect(pregnancyDays).toBeInTheDocument();
+  expect(pregnancyDays).toBeInTheDocument();
 })

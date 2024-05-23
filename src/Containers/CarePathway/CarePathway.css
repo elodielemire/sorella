@@ -1,77 +1,77 @@
 .progression-bar-container {
-	border: 3px solid var(--secondary-color-light);
-    border-radius: 30px;
-    padding: 30px;
-    margin-right: 30px;
-    margin-top: 10px;
+  border: 3px solid var(--secondary-color-light);
+  border-radius: 30px;
+  padding: 30px;
+  margin-right: 30px;
+  margin-top: 10px;
 }
 
 .time-details {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .date-pregnancy {
-	text-align: center;
-	font-weight: bold;
+  text-align: center;
+  font-weight: bold;
 }
 
 .care-pathway-page .button {
-	margin-top: 20px;
-	font-size: var(--small-font-size);
+  margin-top: 20px;
+  font-size: var(--small-font-size);
 }
 
 .step-bar {
-	position: absolute;
-    height: 100%;
-    top: 10px;
-    left: 15px;
-    border-left: 3px solid var(--secondary-color-light);
+  position: absolute;
+  height: 100%;
+  top: 10px;
+  left: 15px;
+  border-left: 3px solid var(--secondary-color-light);
 }
 
 .dot-container {
-    position: absolute;
-    z-index: 2;
-    top: 4px;
-    left: -22px;
+  position: absolute;
+  z-index: 2;
+  top: 4px;
+  left: -22px;
 }
 
 .dot {
-	height: 16px;
-    width: 16px;
-    background-color: var(--secondary-color-light);
-    border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  background-color: var(--secondary-color-light);
+  border-radius: 50%;
 }
 
 .steps-container {
-	position: relative;
-	margin-left: 60px;
+  position: relative;
+  margin-left: 60px;
 }
 
 .step {
-	margin: 80px 30px;
-	position: relative;
+  margin: 80px 30px;
+  position: relative;
 }
 
 .step-date {
-	position: absolute;
-	left: -93px;
-    top: -10px;
-    padding: 10px;
-    background-color: #FFF2E3;
-    border-radius: 10px;
+  position: absolute;
+  left: -93px;
+  top: -10px;
+  padding: 10px;
+  background-color: #FFF2E3;
+  border-radius: 10px;
 }
 
 .step-todos {
-	display: flex;
+  display: flex;
 }
 
 .step-todos .todo {
-	margin: 10px 10px -30px 0;
-	background-color: var(--secondary-color);
-	border-radius: 30px;
-	text-align: center;
-	color: white;
-	padding: 10px 20px;
-	font-size: var(--small-font-size);
+  margin: 10px 10px -30px 0;
+  background-color: var(--secondary-color);
+  border-radius: 30px;
+  text-align: center;
+  color: white;
+  padding: 10px 20px;
+  font-size: var(--small-font-size);
 }

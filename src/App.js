@@ -1,5 +1,5 @@
 import './App.css';
-import { createContext, useState } from 'react';
+import {createContext, useState} from 'react';
 import {Routes, Route} from 'react-router-dom';
 import Home from "./Containers/Home/Home";
 import CarePathway from "./Containers/CarePathway/CarePathway";
@@ -12,10 +12,10 @@ import Popup from "./Components/Popup/Popup"
 const pregnancyDuration = 280
 const appContext = createContext();
 
-Date.prototype.addDays = function(days) {
-    var date = new Date(this.valueOf());
-    date.setDate(date.getDate() + days);
-    return date;
+Date.prototype.addDays = function (days) {
+  var date = new Date(this.valueOf());
+  date.setDate(date.getDate() + days);
+  return date;
 }
 
 function App() {
@@ -39,27 +39,27 @@ function App() {
   const percentage = Math.round(100 * durationInDays / pregnancyDuration)
 
   const pregnancyDatas = {
-    "dpaDate" : dpaDate,
-    "durationInDays" : durationInDays,
-    "durationInWeeks" : durationInWeeks,
-    "durationInWeeksAndDays" : durationInWeeksAndDays,
-    "percentage" : percentage
+    "dpaDate": dpaDate,
+    "durationInDays": durationInDays,
+    "durationInWeeks": durationInWeeks,
+    "durationInWeeksAndDays": durationInWeeksAndDays,
+    "percentage": percentage
   }
 
   return (
-     <appContext.Provider value={{userDatas,updateUserName,updateOvulationDate}}>
-     {open ? <Popup text="Bienvenue !" closePopup={() => setOpen(false)} login={true} /> : null}
+    <appContext.Provider value={{userDatas, updateUserName, updateOvulationDate}}>
+      {open ? <Popup text="Bienvenue !" closePopup={() => setOpen(false)} login={true}/> : null}
       <div className="App">
         <Navbar userDatas={userDatas}/>
         <Routes>
-            <Route path='/' element={<Home userDatas={userDatas} pregnancyDatas={pregnancyDatas}/>}/>
-            <Route path='/suivre-ma-grossesse' element={<CarePathway pregnancyDatas={pregnancyDatas}/>}/>
-            <Route path='/a-faire/' element={<Todo/>}/>
-            <Route path='/lectures/' element={<ToRead/>}/>
-            <Route path='/lectures/:slug' element={<Article/>}/>
+          <Route path='/' element={<Home userDatas={userDatas} pregnancyDatas={pregnancyDatas}/>}/>
+          <Route path='/suivre-ma-grossesse' element={<CarePathway pregnancyDatas={pregnancyDatas}/>}/>
+          <Route path='/a-faire/' element={<Todo/>}/>
+          <Route path='/lectures/' element={<ToRead/>}/>
+          <Route path='/lectures/:slug' element={<Article/>}/>
         </Routes>
       </div>
-      </appContext.Provider>
+    </appContext.Provider>
   );
 }
 

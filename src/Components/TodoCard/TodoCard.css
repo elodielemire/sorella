@@ -1,54 +1,54 @@
 .todo-card {
-	background-color: var(--secondary-color-light);
-	border-radius: 30px;
-	padding: 10px 30px;
-    margin-bottom: 20px;
+  background-color: var(--secondary-color-light);
+  border-radius: 30px;
+  padding: 10px 30px;
+  margin-bottom: 20px;
 }
 
 .todo-card__title {
-	border-bottom: 1px solid var(--secondary-color);
-	margin: 30px 0;
-	padding-bottom: 5px;
-	font-weight: bold;
-	position: relative;
-	display: flex;
+  border-bottom: 1px solid var(--secondary-color);
+  margin: 30px 0;
+  padding-bottom: 5px;
+  font-weight: bold;
+  position: relative;
+  display: flex;
 }
 
-.todo-card__title:after{
-    content: "\25bc";
-    position: absolute;
-    right: 0;
+.todo-card__title:after {
+  content: "\25bc";
+  position: absolute;
+  right: 0;
 }
 
 .todo-card__title.arrow-up:after {
-	content: "\25b2";
+  content: "\25b2";
 }
 
-.todo-card__title:hover{
-    color: var(--secondary-color);
+.todo-card__title:hover {
+  color: var(--secondary-color);
 }
 
 .todo-card__subtitle {
-	margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .todo-card__when {
-	display: flex;
-	align-items: center;
-	margin-left: 20px;
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
 }
 
 .todo-card__when img {
-	width: 16px;
-	margin-right: 5px;
+  width: 16px;
+  margin-right: 5px;
 }
 
 .todo-card__when p {
-	color: var(--secondary-color);
-	font-size: 12px;
-	font-style: italic;
+  color: var(--secondary-color);
+  font-size: 12px;
+  font-style: italic;
 }
 
-.list-container .hidden  {
-	display: none;
+.list-container .hidden {
+  display: none;
 }

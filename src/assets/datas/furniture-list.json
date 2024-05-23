@@ -1,116 +1,113 @@
 [
-	{
-	"title": "Valise de maternité",
-	"when": "3 mois avant la naissance",
-	"subtitle": "Ma déclaration de grossesse établie par mon praticien est à transmettre :",
-	"items": [
-			{
-				"title": "Des vêtements confortables, amples dans lesquels vous vous sentez bien (avec ouverture sur le devant si vous allaitez)"
-			},
-			{
-				"title": "Une chemise de nuit on un pyjama (avec ouverture devant si vous allaitez)"
-			},
-			{
-				"title": "Des culottes en coton basique avec des serviettes hygiéniques ultra absorbantes ou culottes menstruelles spéciales flux importants maternité"
-			},
-			{
-				"title": "Votre nécesaire de toilette (savon liquide au PH neutre,gel douche très doux, shampooing sec, élastiques à cheveux, crème hydradante, et baume à lèvres)"
-			},
-			{
-				"title": "Une serviette de bain"
-			},
-			{
-				"title": "Un tapis de bain"
-			},
-			{
-				"title": "Des tongs ou des pantoufles"
-			},
-			{
-				"title": "Un coussin d'allaitement"
-			},
-			{
-				"title": "Un livre ou des magazines"
-			},
-			{
-				"title": "Un soutien-gorge d'allaitement"
-			},
-			{
-				"title": "Une veilleuse"
-			}
-		]
-		
-	},
-	{
-	"title": "Séjour à la maternité",
-	"when": "3 mois avant la naissance",
-	"subtitle": "Voici les indispensables pour votre séjour à la maternité (en plus du sac pour la salle de naissance) :",
-	"items": [
-			{
-				"title": "Deux brassières"
-			},
-			{
-				"title": "Un bonnet"
-			},
-			{
-				"title": "Deux gigoteuses"
-			},
-			{
-				"title": "Deux serviettes de bain"
-			},
-			{
-				"title": "Des couches"
-			},
-			{
-				"title": "Des langes"
-			},
-			{
-				"title": "Une tétine"
-			},
-			{
-				"title": "Une brosse douce"
-			},
-			{
-				"title": "Votre dossier médical complet"
-			},
-			{
-				"title": "Votre projet de naissance"
-			},
-			{
-				"title": "Vos papiers d'identité"
-			},
-			{
-				"title": "Votre carte vitale"
-			},
-			{
-				"title": "Une enceinte portable"
-			}
-		]
-		
-	},
-	{
-	"title": "Préparer l'arrivée du bébé",
-	"when": "2 mois avant la naissance",
-	"subtitle": "Voici une liste des principaux équipements pour les premiers mois de votre bébé :",
-	"items": [
-			{
-				"title": "Une poussette"
-			},
-			{
-				"title": "Un siège auto"
-			},
-			{
-				"title": "Une écharpe de portage"
-			},
-			{
-				"title": "Une table à langer"
-			},
-			{
-				"title": "Des biberons"
-			},
-			{
-				"title": "Un couffin"
-			}
-		]
-		
-	}
+  {
+    "title": "Valise de maternité",
+    "when": "3 mois avant la naissance",
+    "subtitle": "Ma déclaration de grossesse établie par mon praticien est à transmettre :",
+    "items": [
+      {
+        "title": "Des vêtements confortables, amples dans lesquels vous vous sentez bien (avec ouverture sur le devant si vous allaitez)"
+      },
+      {
+        "title": "Une chemise de nuit on un pyjama (avec ouverture devant si vous allaitez)"
+      },
+      {
+        "title": "Des culottes en coton basique avec des serviettes hygiéniques ultra absorbantes ou culottes menstruelles spéciales flux importants maternité"
+      },
+      {
+        "title": "Votre nécesaire de toilette (savon liquide au PH neutre,gel douche très doux, shampooing sec, élastiques à cheveux, crème hydradante, et baume à lèvres)"
+      },
+      {
+        "title": "Une serviette de bain"
+      },
+      {
+        "title": "Un tapis de bain"
+      },
+      {
+        "title": "Des tongs ou des pantoufles"
+      },
+      {
+        "title": "Un coussin d'allaitement"
+      },
+      {
+        "title": "Un livre ou des magazines"
+      },
+      {
+        "title": "Un soutien-gorge d'allaitement"
+      },
+      {
+        "title": "Une veilleuse"
+      }
+    ]
+  },
+  {
+    "title": "Séjour à la maternité",
+    "when": "3 mois avant la naissance",
+    "subtitle": "Voici les indispensables pour votre séjour à la maternité (en plus du sac pour la salle de naissance) :",
+    "items": [
+      {
+        "title": "Deux brassières"
+      },
+      {
+        "title": "Un bonnet"
+      },
+      {
+        "title": "Deux gigoteuses"
+      },
+      {
+        "title": "Deux serviettes de bain"
+      },
+      {
+        "title": "Des couches"
+      },
+      {
+        "title": "Des langes"
+      },
+      {
+        "title": "Une tétine"
+      },
+      {
+        "title": "Une brosse douce"
+      },
+      {
+        "title": "Votre dossier médical complet"
+      },
+      {
+        "title": "Votre projet de naissance"
+      },
+      {
+        "title": "Vos papiers d'identité"
+      },
+      {
+        "title": "Votre carte vitale"
+      },
+      {
+        "title": "Une enceinte portable"
+      }
+    ]
+  },
+  {
+    "title": "Préparer l'arrivée du bébé",
+    "when": "2 mois avant la naissance",
+    "subtitle": "Voici une liste des principaux équipements pour les premiers mois de votre bébé :",
+    "items": [
+      {
+        "title": "Une poussette"
+      },
+      {
+        "title": "Un siège auto"
+      },
+      {
+        "title": "Une écharpe de portage"
+      },
+      {
+        "title": "Une table à langer"
+      },
+      {
+        "title": "Des biberons"
+      },
+      {
+        "title": "Un couffin"
+      }
+    ]
+  }
 ]
