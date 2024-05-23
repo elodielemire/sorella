@@ -20,14 +20,14 @@ export default function CarePathway (props) {
 			</div>
 			
 			<div className="progression-bar-container">
-				<ProgressionBar percentage={props.pregnancyDatas.percentage} />
+				<ProgressionBar percentage={props.pregnancyDatas?.percentage} />
 				<div className="time-details">
 					<span>0</span>
 					<span>41 SA</span>
 				</div>
 
-				<p className="date-pregnancy">{props.pregnancyDatas.durationInDays} jours de grossesse ({props.pregnancyDatas.durationInWeeksAndDays})</p>
-	            <p className="date-pregnancy">DPA {props.pregnancyDatas.dpaDate}</p>
+				<p className="date-pregnancy">{props.pregnancyDatas?.durationInDays} jours de grossesse ({props.pregnancyDatas?.durationInWeeksAndDays})</p>
+	            <p className="date-pregnancy">DPA {props.pregnancyDatas?.dpaDate}</p>
             	<Button onClick={() => setOpen(true)} text="Recalculer ma DPA"/>
             </div>
 
@@ -35,7 +35,7 @@ export default function CarePathway (props) {
             <div className="step-bar"></div>
             {
             	pregnancySteps.map((step, index) => {
-            		const dotBackground = index <= props.pregnancyDatas.durationInWeeks ? "var(--secondary-color)" : "var(--secondary-color-light)"
+            		const dotBackground = index <= props.pregnancyDatas?.durationInWeeks ? "var(--secondary-color)" : "var(--secondary-color-light)"
 
             		return (<div className="step" key={index}>
 	             		<p className="step-date">{index} SA</p>

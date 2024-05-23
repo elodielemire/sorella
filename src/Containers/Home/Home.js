@@ -24,7 +24,7 @@ const appointments = [
 export default function Home (props) {
 	return (
 		<div className="container">
-			<h2>Bonjour {props.userDatas.name},</h2>
+			<h2>Bonjour {props.userDatas?.name},</h2>
 			<h2>Nous sommes ravis de te revoir !</h2>
 			<div className="home-cards-container">
 				<div>

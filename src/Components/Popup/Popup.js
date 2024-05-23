@@ -29,7 +29,7 @@ export default function Popup (props) {
             <label>Entrer votre prénom</label>
             <input type="text" onChange={(event) => setName(event.target.value)} />
             <label>Entrer votre date d'ovulation</label>
-            <input type="date" onChange={(event) => setOvulationDate(event.target.value)} />
+            <input type="date" data-testid="ovulation-date" onChange={(event) => setOvulationDate(event.target.value)} />
             <Button text="Entrer" onClick={onClickLoginButton}/>
           </div> : 
           <div className="popup__content">
